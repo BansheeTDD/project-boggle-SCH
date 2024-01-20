@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
   // Функция для выбора случайной буквы из списка
   function getRandomLetter(letters) {
     const randomIndex = Math.floor(Math.random() * letters.length);
