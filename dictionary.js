@@ -2,4 +2,4 @@ let dictionary = ["ABACUS", "ABANDON", "ABANDONED", "ABBREVIATE", "ABILITY", "AB
 
 let dictionarySet = new Set(dictionary);
 
-module.exports = { dictionary, dictionarySet };
+module.exports = { dictionarySet };
