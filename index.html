@@ -6,6 +6,7 @@
     <title>BOGGL</title>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./addCubes.js"></script>
+    <script defer src="./idx.js"></script>
   </head>
   <body>
     <div class="timer-container">
@@ -16,7 +17,41 @@
       <p id="score">Score: 0</p>
     </div>
 
+    <!-- table  -->
+    <table class="board">
+      <tr>
+        <th colspan="4" id="tbStrNum">
+            <div id="strNum">слово</div>
+        </th>
+      </tr>
+      <tr>
+          <td data-row="0" data-column="0">0</td>
+          <td data-row="0" data-column="1">1</td>
+          <td data-row="0" data-column="2">2</td>
+          <td data-row="0" data-column="3">3</td>
+      </tr>
+      <tr>
+          <td data-row="1" data-column="0">4</td>
+          <td data-row="1" data-column="1">5</td>
+          <td data-row="1" data-column="2">6</td>
+          <td data-row="1" data-column="3">7</td>
+      </tr>
+      <tr>
+          <td data-row="2" data-column="0">8</td>
+          <td data-row="2" data-column="1">9</td>
+          <td data-row="2" data-column="2">10</td>
+          <td data-row="2" data-column="3">11</td>
+      </tr>
+      <tr>
+          <td data-row="3" data-column="0">12</td>
+          <td data-row="3" data-column="1">13</td>
+          <td data-row="3" data-column="2">14</td>
+          <td data-row="3" data-column="3">15</td>
+      </tr>
+    </table>
+
     <div class="board-container" id="board-container">
+
       <!-- Кубики будут добавлены с помощью JavaScript -->
     </div>
 
