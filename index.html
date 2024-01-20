@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGGL</title>
     <link rel="stylesheet" href="./style.css" />
-    <script defer src=""></script>
+    <script defer src="./addCubes.js"></script>
   </head>
   <body>
-    <div class="game-container">
-      <div class="board-container">
-        <!-- Буквы будут добавлены с помощью JavaScript -->
+    <div class="timer-container">
+      <p id="timer">3:00</p>
+    </div>
+
+    <div class="score-container">
+      <p id="score">Score: 0</p>
+    </div>
+
+    <div class="board-container" id="board-container">
+      <!-- Кубики будут добавлены с помощью JavaScript -->
+    </div>
+
+    <div class="buttons-container">
+      <button id="shuffle-btn">Перемешать</button>
+      <button id="finish-btn">Завершить игру</button>
+    </div>
+
+    <div class="results-container">
+      <div class="word-board">
+        <h2>Введенные слова</h2>
+        <!-- раздел для введенных слов -->
       </div>
-      <div class="buttons-container">
-        <button id="shuffle-btn">Перемешать</button>
-        <button id="finish-btn">Завершить игру</button>
+      <div class="top-words-board">
+        <h2>Топ-10 длинных слов</h2>
+        <!-- раздел для топ-10 длинных слов -->
       </div>
-      <div class="results-container">
-        <div class="word-board">
-          <h2>Введенные слова</h2>
-          <!-- раздел для введенных слов -->
-        </div>
-        <div class="top-words-board">
-          <h2>Топ-10 длинных слов</h2>
-          <!-- раздел для топ-10 длинных слов -->
-        </div>
-        <div class="player-results-board">
-          <h2>Топ-10 результатов игроков</h2>
-          <!-- раздел для топ-10 результатов игроков -->
-        </div>
-      </div>
-      <div class="timer-container">
-        <p id="timer">3:00</p>
+      <div class="player-results-board">
+        <h2>Топ-10 результатов игроков</h2>
+        <!-- раздел для топ-10 результатов игроков -->
       </div>
     </div>
   </body>
