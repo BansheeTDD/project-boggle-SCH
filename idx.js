@@ -1,5 +1,7 @@
 // const { dictionary, dictionarySet } = require('./dictionary');
 // const { initializeBoard } = require('./addCubes');
+const { rollDice } = require('./rollDice');
+
 const shuffleButton = document.getElementById('shuffle-btn');
 const finishButton = document.getElementById('finish-btn');
 // const allButtons = document.getElementById('board-container');
