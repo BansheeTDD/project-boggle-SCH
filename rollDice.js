@@ -32,6 +32,6 @@ function rollDice(){
     }
 }
 
-module.exports = {
-    rollDice,
-  };
+// module.exports = {
+//     rollDice,
+//   };
