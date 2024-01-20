@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGGL</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src=""></script>
   </head>
-  <body></body>
+  <body>
+    <div id="boggle-container">
+      <div id="game-board"></div>
+      <button onclick="shuffle()">Перемешать</button>
+      <div id="word-input">
+        <label for="word">Введите слово:</label>
+        <input type="text" id="word" />
+        <button onclick="checkWord()">Проверить</button>
+      </div>
+      <div id="word-result"></div>
+      <button onclick="endGame()">Завершить игру</button>
+      <div id="timer">3:00</div>
+      <div id="top-words">
+        <h3>Топ-10 слов:</h3>
+        <ol id="top-scores-list"></ol>
+      </div>
+    </div>
+  </body>
 </html>
