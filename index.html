@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGGL</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script defer src=""></script>
   </head>
   <body>
-    <div id="boggle-container">
-      <div id="game-board"></div>
-      <button onclick="shuffle()">Перемешать</button>
-      <div id="word-input">
-        <label for="word">Введите слово:</label>
-        <input type="text" id="word" />
-        <button onclick="checkWord()">Проверить</button>
+    <div class="game-container">
+      <div class="board-container">
+        <!-- Буквы будут добавлены с помощью JavaScript -->
       </div>
-      <div id="word-result"></div>
-      <button onclick="endGame()">Завершить игру</button>
-      <div id="timer">3:00</div>
-      <div id="top-words">
-        <h3>Топ-10 слов:</h3>
-        <ol id="top-scores-list"></ol>
+      <div class="buttons-container">
+        <button id="shuffle-btn">Перемешать</button>
+        <button id="finish-btn">Завершить игру</button>
+      </div>
+      <div class="results-container">
+        <div class="word-board">
+          <h2>Введенные слова</h2>
+          <!-- раздел для введенных слов -->
+        </div>
+        <div class="top-words-board">
+          <h2>Топ-10 длинных слов</h2>
+          <!-- раздел для топ-10 длинных слов -->
+        </div>
+        <div class="player-results-board">
+          <h2>Топ-10 результатов игроков</h2>
+          <!-- раздел для топ-10 результатов игроков -->
+        </div>
+      </div>
+      <div class="timer-container">
+        <p id="timer">3:00</p>
       </div>
     </div>
   </body>
